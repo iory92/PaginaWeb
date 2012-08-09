@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Calliope</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="images/favicon.gif" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.xml = "config.xml";
+flashvars.font = "font.swf";
+var attributes = {};
+attributes.wmode = "transparent";
+attributes.id = "slider";
+swfobject.embedSWF("cu3er.swf", "cu3er-container", "960", "270", "9", "expressInstall.swf", flashvars, attributes);
+</script>
+<style type="text/css">
+.Estilo1 {color: #0000FF}
+.Estilo4 {color: #000000; font-weight: bold; }
+</style>
+</head>
+<body>
+<!--Header Begin-->
+<div id="header">
+  <div class="center">
+    <div id="logo"><a href="#">Calliope</a></div>
+    <!--Menu Begin-->
+    <div id="menu">
+      <ul>
+        <li><a class="active" href="home.html"><span>Login</span></a></li>
+        <li><a href="home2.php"><span>Home</span></a></li>
+        <li><a href="hadmin.php"><span>Usuarios</span></a></li>
+        <li><a href="egresados.php"><span>Egresados</span></a></li>
+      </ul>
+    </div>
+    <!--Menu END-->
+  </div>
+</div>
+<!--Header END-->
+<!--Toprow Begin-->
+<div id="toprow">
+  <div class="center">
+    <div id="cubershadow">
+      <div id="cu3er-container"> <a href="http://www.adobe.com/go/getflashplayer"> <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="" /> </a> </div>
+    </div>
+  </div>
+</div>
+<!--Toprow END-->
+<!--MiddleRow Begin-->
+<div id="midrow">
+  <div id="container"></div>
+</div>
+<!--MiddleRow END-->
+<!--BottomRow Begin-->
+<div id="bottomrow">
+  <div class="textbox">
+    <form id="form1" name="form1" method="post" action="redirect.php">
+      <h1><span class="Estilo4">Bienvenido</span></h1>
+      <p>&nbsp;</p>
+      <table align="right">
+        <tr>
+          <td><span class="Estilo4">Nombre</span></td>
+          <td colspan="2"><label>
+            <input name="nombre" type="text" id="nombre" />
+          </label></td>
+        </tr>
+        <tr>
+          <td><span class="Estilo4">Password</span></td>
+          <td colspan="2"><input name="pasword" type="password" id="pasword" /></td>
+        </tr>
+        <tr>
+          <?php if (isset($_GET['op'])=="editar") { ?>
+          <td colspan="4"><input type="submit" name="Login" id="Login" value="Login"/></td>
+        </tr>
+      </table>
+      <h1>&nbsp;</h1>
+      <h1 class="Estilo1">&nbsp;</h1>
+    </form>
+    <h1>&nbsp;</h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="feed"></div>
+</div>
+<!--BottomRow END-->
+<!--Footer Begin-->
+<div id="footer">
+  <div class="foot"> <span>Calliope</span> by <a href="http://www.towfiqi.com">Towfiq I.</a> is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License.</a> </div>
+</div>
+<!--Footer END-->
+</body>
+</html>
